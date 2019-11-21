@@ -48,6 +48,19 @@ There are many GIS tools and applications out there both desktop and online.
 
 [QGIS](https://www.qgis.org/en/site/) - QGIS is a free and open source Desktop GIS software. Available on PC, Mac, and Windows. This is a collaborative and ongoing FOSS software development project with a large user community. Integrates nicely with other Open Source GIS initiatives and libraries in existence. As far as I can tell, there is really nothing you can't do with ArcGIS that you can't do in QGIS or other FOSS tools. But there is not the same level of dedicated support, documentation, etc. around it.
 
+[PostgreSQL](https://www.postgresql.org/) + [PostGIS](https://postgis.net/) - PostgreSQL is a free and open source relational database which can be extended using PostGIS. Using these two in combination allow you to manage your data as you would in any database and perform spatial analysis on the data as you would in a more traditional GIS software. Also interfaces nicely with Desktop GIS software.
+
+## Python in GIS
+
+Python is a very useful language to learn for GIS users as most (all?) GIS packages provide an interface to do analysis via scripting in python. Why?
+
+    1. Python is free
+    2. Python is flexible (supports tons of data formats) 
+    3. Python allows you to plug in 3rd party softwares or applications (PostgreSQL database, GeoDjango web application)
+    4. Python allows you to automate things
+    5. Python allows you to build your own functionality
+
+
 ## Pandas
 [Pandas Homepage](https://pandas.pydata.org/)
 
@@ -59,4 +72,65 @@ Pandas is an open source python library providing high-performance, easy-to-use 
 GeoPandas is an open source project to make working with geospatial data in python easier. GeoPandas extends the datatypes used by pandas to allow spatial operations on geometric types. Geometric operations are performed by shapely. Geopandas further depends on fiona for file access and descartes and matplotlib for plotting.
 
 The goal of GeoPandas is to make working with geospatial data in python easier. It combines the capabilities of pandas and shapely, providing geospatial operations in pandas and a high-level interface to multiple geometries to shapely. GeoPandas enables you to easily do operations in python that would otherwise require a spatial database such as PostGIS. 
+
+## Which one of these tools should I use?
+
+There are tons of tools, libraries, applications, packages, etc. out there. Which should you use? It depends:
+
+    1. Your context aka What you need to do
+    2. What you are already familiar with
+    
+Personally, I have used all of these that I've listed and they compliment eachother. But generally my workflow looks like this:
+
+    - Store the data in a database (PostgreSQL)
+    - Manipulate it in the database (or now in Python using GeoPandas!)
+    - Automate things if needed (Python)
+    - Look at it  and make pretty outputs in Desktop GIS (QGIS or ArcGIS)
+    
+You should develop your own workflow based on what works for you!
+
+## Code
+
+All the code I'm using today is available in this GitHub repository both as a python script (.py) and as a Jupyter Notebook (.ipynb)
+
+## Future Resources
+
+We have touched on a ton of stuff today, you can never know everything about GIS and Python. This is part of the beauty of it. Here are resources to learn more....
+
+# Learn more Python...
+
+-[Research Data Services Workshops](https://data.library.virginia.edu/training/). Including a Python and R series of workshops.
+-[Research Data Services - Statlab](https://data.library.virginia.edu/statlab/). Get individual or small group help on statistics, software, programming, etc. projects concerning your class or labwork. Or just email [statlab@virginia.edu](statlab@virginia.edu)
+-Pick up a book like [Learn Python 3 The Hard Way](https://search.lib.virginia.edu/catalog/u7434195). Available via the UVA Library!
+-Take [CS 1110/1111](https://cs1110.cs.virginia.edu/). All course materials are available online for *FREE*
+-[PhD+ Workshop Materials]. All course materials online for *FREE*
+
+# Self Help Via the Internet
+
+  * Google 
+        * Ex: "How to make dictionary python"
+        * Ex: "python decorators"
+        
+  * Stack Overflow (https://stackoverflow.com/)
+        * A question/answer site for programming questions (actually, not just programming any more)
+        * Not only python
+        * DO NOT just ask questions, do your research first!
+            * Odds are very high someone has already asked your question, especially as a novice
+     
+  * Youtube
+        - Corey Schafer (https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g)
+            - If you have a question about a python programming concept, Corey Schafer has covered it
+     
+  * Practice Python (http://www.practicepython.org/)
+        * Coding challenges for programmers of all levels
+        
+  * Python Tutor (http://pythontutor.com/)
+        * Visualize what your code is doing step-by-step
+        * Has limitations once you start importing libraries
+        
+  * TalkPython Training (https://training.talkpython.fm/)
+        * Not free
+        * Really awesome courses that help you get "real world" project experience
+
+
 
