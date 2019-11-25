@@ -44,6 +44,7 @@ or geographic data.
 My interpretation of this: Take your data and see it on a map. Ultimately, GIS is about data visualization. There are reasons things exist where they do in the world. The spatial relationship between things matters. GIS allows you to see the patterns in your data in a way you cannot if you only look at the data in a tabular/spreadsheet view.
 
 There are many GIS tools and applications out there both desktop and online.
+
 [ArcGIS](https://www.esri.com/en-us/home) - The Industry Leading GIS software. Manufactured by ESRI. Available for PC/Windows machines only. ArcGIS has evolved to become a suite of softwares (think Microsoft Office). There is a desktop version (ArcGIS Pro), online version (ArcGIS Online), etc. Interfaces with many other softwares and applications but ultimately you are limited by what ESRI lets you do. Licensing is expensive.
 
 [QGIS](https://www.qgis.org/en/site/) - QGIS is a free and open source Desktop GIS software. Available on PC, Mac, and Windows. This is a collaborative and ongoing FOSS software development project with a large user community. Integrates nicely with other Open Source GIS initiatives and libraries in existence. As far as I can tell, there is really nothing you can't do with ArcGIS that you can't do in QGIS or other FOSS tools. But there is not the same level of dedicated support, documentation, etc. around it.
