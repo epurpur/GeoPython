@@ -131,6 +131,18 @@ We have touched on a ton of stuff today, you can never know everything about GIS
   * TalkPython Training (https://training.talkpython.fm/)
         * Not free
         * Really awesome courses that help you get "real world" project experience
+        
+ # Documentation Links
+ 
+ * [ArcPy](http://desktop.arcgis.com/en/arcmap/10.3/analyze/arcpy/what-is-arcpy-.htm) (Python Module for ArcGIS)
+ 
+ * [PyQGIS](https://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook/)
+ 
+ * [Introduction to Geopandas](https://automating-gis-processes.github.io/CSC18/lessons/L2/geopandas-basics.html)
+ 
+ * [Spatial Functions in R](https://cran.r-project.org/web/views/Spatial.html)
+     * For R Users
+     
 
 
 
